@@ -1,0 +1,8 @@
+POST http://localhost:8000/v1
+Content-Type: application/json
+
+{
+    "operation_type": "*",
+    "x": 5,
+    "y": 7
+}
