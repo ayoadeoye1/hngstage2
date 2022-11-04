@@ -39,9 +39,9 @@ const Opr = (a)=>{
 app.post('/evaluate', async(req, res)=>{
     const { operation_type, x, y} = req.body;
     
-    if(!operation_type || !x || !y){
-        return res.status(400).json('input all');
-    }
+    // if(!operation_type || !x || !y){
+    //     return res.status(400).json('input all');
+    // }
 
     try {
         const result = await Eval(operation_type, x, y);
