@@ -11,25 +11,27 @@ app.use(express.urlencoded({ extended: true}));
 
 
 const Eval = (a, x, y)=>{
-    if(a == '+'){
+    if(a.includes('add') || a == '+'){
         return Number(x)+Number(y);
     }else
-    if(a == '-'){
+    if(a.includes('subtract') || a == '-'){
         return Number(x)-Number(y);
     }else
-    if(a == '*'){
+    if(a.includes('multiply') || a == '*'){
         return Number(x)*Number(y);
     }
 }
 
 const Opr = (a)=>{
-    if(a == '+'){
+
+
+    if(a.includes('add') || a == '+'){
         return 'addition';
     }else
-    if(a == '-'){
+    if(a.includes('subtract') || a == '-'){
         return 'subtraction';
     }else
-    if(a == '*'){
+    if(a.includes('multiply') || a == '*'){
         return 'multiplication';
     }
 }
@@ -43,6 +45,7 @@ app.post('/evaluate', async(req, res)=>{
 
     try {
         const result = await Eval(operation_type, x, y);
+
         const opV = await Opr(operation_type)
 
         const data = {

@@ -1,8 +1,18 @@
-POST http://localhost:8000/v1
+POST https://ayoadeoyehng1.herokuapp.com/evaluate
 Content-Type: application/json
 
 {
-    "operation_type": "*",
-    "x": 5,
+    "operation_type": "subtract 7 from 60",
+    "x": 60,
+    "y": 7
+}
+
+###
+POST http://localhost:8000/evaluate
+Content-Type: application/json
+
+{
+    "operation_type": "subtract 7 from 60",
+    "x": 60,
     "y": 7
 }
