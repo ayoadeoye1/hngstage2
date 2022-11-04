@@ -49,9 +49,9 @@ app.post('/evaluate', async(req, res)=>{
         const opV = await Opr(operation_type)
 
         const data = {
-            "slackUsername": 'ayoadeoye',
-            "result": result,
-            "operation_type": opV
+            slackUsername: 'ayoadeoye',
+            result: result,
+            operation_type: opV
         }
         res.json(data);
     } catch (error) {

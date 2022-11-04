@@ -2,8 +2,8 @@ POST https://ayoadeoyehng1.herokuapp.com/evaluate
 Content-Type: application/json
 
 {
-    "operation_type": "subtract 7 from 60",
-    "x": 60,
+    "operation_type": "please multiply 7 by 10",
+    "x": 6,
     "y": 10
 }
 
@@ -12,7 +12,7 @@ POST http://localhost:8000/evaluate
 Content-Type: application/json
 
 {
-    "operation_type": "subtract 7 from 60",
-    "x": 60,
+    "operation_type": "please multiply 7 by 10",
+    "x": 6,
     "y": 10
 }
