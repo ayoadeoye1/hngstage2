@@ -4,7 +4,7 @@ Content-Type: application/json
 {
     "operation_type": "subtract 7 from 60",
     "x": 60,
-    "y": 7
+    "y": 10
 }
 
 ###
@@ -14,5 +14,5 @@ Content-Type: application/json
 {
     "operation_type": "subtract 7 from 60",
     "x": 60,
-    "y": 7
+    "y": 10
 }

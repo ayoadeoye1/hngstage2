@@ -53,9 +53,9 @@ app.post('/evaluate', async(req, res)=>{
             "result": result,
             "operation_type": opV
         }
-        res.status(201).json(data);
+        res.json(data);
     } catch (error) {
-        res.status(400).json({exception: error});
+        res.json({exception: error});
     }
     
 })
